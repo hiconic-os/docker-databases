@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker stop bt-test-mysql
+docker stop hc-test-mysql

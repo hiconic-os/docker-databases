@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker stop bt-test-oracle
+docker stop hc-test-oracle

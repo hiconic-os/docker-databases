@@ -1,0 +1,5 @@
+11 is the last official oracle image, which is very old
+
+for newer version use:
+
+	https://hub.docker.com/r/gvenzl/oracle-free

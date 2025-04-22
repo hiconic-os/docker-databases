@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker stop bt-test-mssql
+docker stop hc-test-mssql

@@ -4,7 +4,7 @@
 __waitTillServerStarts() {
 	local i;
 	for (( i=0; i<30 ; i++ )) ; do
-		local logs=$(docker logs bt-test-mssql 2>/dev/null | grep "Starting up database 'tempdb'.")
+		local logs=$(docker logs hc-test-mssql 2>/dev/null | grep "Starting up database 'tempdb'.")
 		if [ ! -z "$logs" ]; then return; fi
 		echo "NOT READY YET";
 		sleep 1;
@@ -13,4 +13,4 @@ __waitTillServerStarts() {
 
 
 __waitTillServerStarts;
-docker exec bt-test-mssql //opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P cortex-10 -i //opt/mssql-tools/script/init.sql
+docker exec hc-test-mssql //opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P cortex-10 -i //opt/mssql-tools/script/init.sql

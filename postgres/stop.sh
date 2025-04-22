@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker stop bt-test-postgres
+docker stop hc-test-postgres
